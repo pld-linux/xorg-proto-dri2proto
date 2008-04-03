@@ -1,11 +1,11 @@
 Summary:	DRI2 protocol and ancillary headers
 Name:		xorg-proto-dri2proto
-Version:	1.0.0
+Version:	1.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{version}.tar.bz2
-# Source0-md5:	49b1359dea0842b8956bbc7f1ba426fb
+# Source0-md5:	1d70f0653b0b3a837853262dc5d34da4
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
