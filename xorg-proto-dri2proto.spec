@@ -1,4 +1,5 @@
-Summary:	DRI2 protocol and ancillary headers
+Summary:	DRI2 extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia DRI2
 Name:		xorg-proto-dri2proto
 Version:	1.1
 Release:	1
@@ -13,17 +14,22 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-DRI2 protocol and ancillary headers.
+DRI2 extension headers.
+
+%description -l pl.UTF-8
+Nagłówki rozszerzenia DRI2.
 
 %package devel
-Summary:	DRI2 protocol and ancillary headers
+Summary:	DRI2 extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia DRI2
 Group:		X11/Development/Libraries
-Requires:	libdrm-devel
-Requires:	xorg-proto-glproto-devel
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-DRI2 protocol and ancillary headers.
+DRI2 extension headers.
+
+%description devel -l pl.UTF-8
+Nagłówki rozszerzenia DRI2.
 
 %prep
 %setup -q -n dri2proto-%{version}
