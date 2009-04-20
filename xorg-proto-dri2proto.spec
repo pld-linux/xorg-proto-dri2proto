@@ -1,12 +1,12 @@
 Summary:	DRI2 extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia DRI2
 Name:		xorg-proto-dri2proto
-Version:	1.99.3
-Release:	2
+Version:	2.0
+Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{version}.tar.bz2
-# Source0-md5:	fffbbb3c26368ac63d408e81c51ec374
+# Source0-md5:	26f6515322ec50691584ac74291b4254
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
