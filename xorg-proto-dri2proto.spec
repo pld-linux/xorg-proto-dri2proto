@@ -10,7 +10,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{versi
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING
+%doc COPYING ChangeLog dri2proto.txt
 %{_includedir}/X11/extensions/dri2*.h
 %{_pkgconfigdir}/dri2proto.pc
