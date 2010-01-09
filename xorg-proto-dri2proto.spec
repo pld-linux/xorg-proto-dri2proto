@@ -10,6 +10,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{versi
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
+BuildRequires:	pkgconfig
 BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
