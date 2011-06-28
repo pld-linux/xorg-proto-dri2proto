@@ -2,11 +2,12 @@ Summary:	DRI2 extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia DRI2
 Name:		xorg-proto-dri2proto
 Version:	2.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{version}.tar.bz2
 # Source0-md5:	0cdeb1e95901813385dc9576be272bd3
+Patch0:		%{name}-xDRI2BufferSwapComplete.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -34,6 +35,7 @@ Nagłówki rozszerzenia DRI2 (Direct Rendering Infrastructure 2).
 
 %prep
 %setup -q -n dri2proto-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
